@@ -8,10 +8,6 @@
 - Email results (--email)
 - Only show found MyISAM tables
 
-### Failsafe / Testing
-- When testing for the first time, manually run outside of systemd and issue a Ctrl+C (sig-int) if it doesn't work as expected.
-- This will stop the script and set the dell server back to auto fan controll.
-
 ### Requirements
 This script only needs 2 things to work, PHP and local linux mysql tooling (mysql/mysqldump).
 
@@ -19,7 +15,7 @@ This script only needs 2 things to work, PHP and local linux mysql tooling (mysq
 
 Example commands:
 ```sh
-myisam2innodb.php --run --single mydatabase
+php myisam2innodb.php --run --single mydatabase
 ```
 
 ## ToDo
